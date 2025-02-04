@@ -27,16 +27,19 @@
 
 //Arrays
 
-let arr1 = [1,2,3,4,5]
-let arr2 = [10,20,30,40,50]
+// let arr1 = [1,2,3,4,5]
+// let arr2 = [10,20,30,40,50]
 
-const spread_arr = [...arr1,...arr2]
-// console.log(spread_arr)
+// const spread_arr = [...arr1,...arr2]
+// // console.log(spread_arr)
 
-let arr = [1,2,3,[4,5,6],[4,8,2,[6,7,88,99,0]]]
+// let arr = [1,2,3,[4,5,6],[4,8,2,[6,7,88,99,0]]]
 // console.log(arr.flat(Infinity)); // Flattening the array to infinite level
 
 // console.log(Array.from('maniroop')) //creates an array from string
+
+
+
 
 
 
