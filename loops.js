@@ -35,20 +35,20 @@
 
 // }
 
-arr = ['a','b','c','d','e']
-arr.forEach(function (item) {
-    // console.log(item);
+// arr = ['a','b','c','d','e']
+// arr.forEach(function (item) {
+//     // console.log(item);
     
-});
-// Forecah arrow function
-arr.forEach(items => {
-    // console.log(items);
+// });
+// // Forecah arrow function
+// arr.forEach(items => {
+//     // console.log(items);
     
-});
+// });
 
-arr.forEach((items,index, arr) => {
-    console.log(items, index, arr);
+// arr.forEach((items,index, arr) => {
+//     console.log(items, index, arr);
     
-});
+// });
 
 
