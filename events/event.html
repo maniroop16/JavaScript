@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="book" src="G:\JS\events\images\book.jpg" alt="book"></li>
+            <li><img width="200px" id="headphones" src="G:\JS\events\images\headphones.jpg" alt="headphones"></li>
+            <li><img width="200px" id="shirt" src="G:\JS\events\images\shirt.jpg" alt="shirt"></li>
+            <li><img width="200px" id="shoes" src="G:\JS\events\images\shoes.jpg" alt="shoes"></li>
+            <li><img width="200px" id="watch" src="G:\JS\events\images\watch.jpg" alt="watch"></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // document.getElementById('book').onclick = function(){
+    //     alert("book clicked")
+    // }
+
+    // Most used Events examples: 
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    // document.getElementById('book').addEventListener('click', function(e){
+    //     console.log(e);
+        
+    // })
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     alert('All images box')
+    // })
+    // document.getElementById('shoes').addEventListener('click', function(e){
+    //     alert('shoe clicked')
+    //     e.stopPropagation()
+
+    // })
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     e.preventDefault()
+    //     console.log('google clicked');
+    // })
+
+    // document.querySelector('#images').addEventListener('click', function(e){
+    //     console.log(e.target.parentNode)
+    //     let removeElement = e.target.parentNode
+    //     removeElement.remove()
+    //     // removeElement.parentNode.removeChild(removeElement) // Same as above
+    // })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName)
+        if (e.target.tagName === "IMG") {
+            let removeElement = e.target.parentNode
+            removeElement.remove()
+        }
+    })
+</script>
+</html>

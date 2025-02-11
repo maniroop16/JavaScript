@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+        <h1>change this text after 2 seconds</h1>
+        <button id="stop">STOP</button>
+        <button id="start">START</button>
+
+        <h1>change backgroundcolor</h1>
+        <button id="colorstop">STOP</button>
+        <button id="colorstart">START</button>
+    
+</body>
+
+<script>
+
+    // let changetext = function(){
+    //     console.log('changeddd', Date.now())
+    // }
+
+    // let settinginterval
+    // document.querySelector('#start').addEventListener('click', function(){
+    //     settinginterval = setInterval(changetext, 2000)
+    // })
+
+    // document.querySelector('#stop').addEventListener('click', function(){
+    //     clearInterval(settinginterval)
+    // })
+
+    const randomcolor = function () {
+        let possiblevalues = '0123456789ABCDEF'
+        let color = "#"
+        for (let i = 0; i < 6; i++) {
+            color += possiblevalues[Math.floor(Math.random() * 16)]
+        }
+        return color
+    }
+    const printcolor = ()=> {
+        document.body.style.backgroundColor = randomcolor()
+    }
+    let stopinterval
+    document.querySelector('#colorstart').addEventListener('click', function(){
+        if (!stopinterval) {
+            stopinterval = setInterval(printcolor, 1000)
+        }
+    })
+
+    document.querySelector('#colorstop').addEventListener('click', function(){
+        clearInterval(stopinterval)
+        stopinterval = null
+    })
+
+
+</script>
+
+</html>

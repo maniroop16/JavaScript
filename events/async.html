@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>change this text after 2 seconds</h1>
+    <button id="stop">STOP</button>
+</body>
+
+<script>
+    let changetext = function(){
+        document.querySelector('h1').innerHTML = 'Text changed after 2 secs'
+    }
+    const settingtime= setTimeout(changetext, 3000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(settingtime)
+        console.log('Stopped!!')
+    })
+
+</script>
+
+</html>

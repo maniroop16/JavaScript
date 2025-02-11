@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text with Fixed Background Color</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .fixed-background {
+            background-color: yellow; /* Set the background color */
+            display: inline; /* Make the background fit just the text */
+            padding: 4px 8px; /* Add padding for better spacing */
+            border-radius: 5px; /* Optional: rounded corners for a smooth look */
+        }
+
+        .custom-container {
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #f8f9fa; /* Light background for the container */
+            border-radius: 10px; /* Rounded corners for the container */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container custom-container">
+        <h2 class="text-center">Enhancing Text with Background Color</h2>
+        <p class="lead text-center">This is an example of <span class="fixed-background">text with a fixed background color</span> within a Bootstrap container.</p>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional for additional functionality like modals) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
